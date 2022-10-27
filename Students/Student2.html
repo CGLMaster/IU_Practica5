@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSSs/index.css" rel="stylesheet">
+    <title>GUI</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Gestión Matrículas CFI</h1>
+        <img class="icono" src="../Resources/icono.PNG" onclick="javascript:location.replace('../MainView.html')">
+        <div class="cuenta">
+            <h2 class="user">Virginia Francisco Gilmartín</h2>
+            <img class="logo" src="../Resources/perfil.png">
+        </div>
+    </header>
+    <main>
+        <script src="../JavaScript/funciones.js"></script>
+        <div class="leyenda">
+            <h2>Nombre y Apellidos</h2>
+            <div>
+                <input type="search" placeholder='Buscar...' id='search'>
+                <div id='button-holder'>
+                    <img src='../Resources/lupe.png'/>
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S1">
+            <div id="cabecera">
+                <h2>MARÍA BARCENILLA HINCHADO</h2>
+                <button onclick="desplegar('S1','C1','I1')"><img id="I1" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C1">
+                <div class="info">
+                    <h2>DNI: 67325643X</h2>
+                    <h2>Email: maria@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S2">
+            <div id="cabecera">
+                <h2>ALBERTO CHAVES LÓPEZ</h2>
+                <button onclick="desplegar('S2','C2','I2')"><img id="I2" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C2">
+                <div class="info">
+                    <h2>DNI: 48937682G</h2>
+                    <h2>Email: albertoC@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S3">
+            <div id="cabecera">
+                <h2>BRYAN EDUARDO CÓRDOVA ASCURRA</h2>
+                <button onclick="desplegar('S3','C3','I3')"><img id="I3" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C3">
+                <div class="info">
+                    <h2>DNI: 69326584H</h2>
+                    <h2>Email: bryanC@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S4">
+            <div id="cabecera">
+                <h2>MARTA CROCHE TRIGO</h2>
+                <button onclick="desplegar('S4','C4','I4')"><img id="I4" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C4">
+                <div class="info">
+                    <h2>DNI: 96749367J</h2>
+                    <h2>Email: martaC@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S5">
+            <div id="cabecera">
+                <h2>FÉLIX RODOLFO DÍAZ LORENTE</h2>
+                <button onclick="desplegar('S5','C5','I5')"><img id="I5" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C5">
+                <div class="info">
+                    <h2>DNI: 53647893J</h2>
+                    <h2>Email: felixR@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S6">
+            <div id="cabecera">
+                <h2>MANUEL ESPINOSA GUERRA</h2>
+                <button onclick="desplegar('S6','C6','I6')"><img id="I6" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C6">
+                <div class="info">
+                    <h2>DNI: 54637288L</h2>
+                    <h2>Email: manuelE@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S7">
+            <div id="cabecera">
+                <h2>JUAN IGNACIO FERNÁNDEZ JOVER</h2>
+                <button onclick="desplegar('S7','C7','I7')"><img id="I7" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C7">
+                <div class="info">
+                    <h2>DNI: 748392567P</h2>
+                    <h2>Email: juanF@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S8">
+            <div id="cabecera">
+                <h2>JULIA FLUITERS PEREIRA</h2>
+                <button onclick="desplegar('S8','C8','I8')"><img id="I8" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C8">
+                <div class="info">
+                    <h2>DNI: 81523476S</h2>
+                    <h2>Email: juliaF@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S9">
+            <div id="cabecera">
+                <h2>MANUEL FREIRE MORAN</h2>
+                <button onclick="desplegar('S9','C9','I9')"><img id="I9" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C9">
+                <div class="info">
+                    <h2>DNI: 90256938T</h2>
+                    <h2>Email: manuelF@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S10">
+            <div id="cabecera">
+                <h2>JOSÉ MARÍA DE LA FUENTE BAHÓN</h2>
+                <button onclick="desplegar('S10','C10','I10')"><img id="I10" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C10">
+                <div class="info">
+                    <h2>DNI: 53628590R</h2>
+                    <h2>Email: joseF@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S11">
+            <div id="cabecera">
+                <h2>JESÚS GARCÍA PEÑA</h2>
+                <button onclick="desplegar('S11','C11','I11')"><img id="I11" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C11">
+                <div class="info">
+                    <h2>DNI: 935462746D</h2>
+                    <h2>Email: jesusG@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S12">
+            <div id="cabecera">
+                <h2>DAVID GARCÍA SÁNCHEZ</h2>
+                <button onclick="desplegar('S12','C12','I12')"><img id="I12" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C12">
+                <div class="info">
+                    <h2>DNI: 91253648K</h2>
+                    <h2>Email: davidG@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S13">
+            <div id="cabecera">
+                <h2>CARLOS GÓMEZ LÓPEZ</h2>
+                <button onclick="desplegar('S13','C13','I13')"><img id="I13" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C13">
+                <div class="info">
+                    <h2>DNI: 24356745L</h2>
+                    <h2>Email: cgomez@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S14">
+            <div id="cabecera">
+                <h2>MARTA GÓMEZ SÁNCHEZ</h2>
+                <button onclick="desplegar('S14','C14','I14')"><img id="I14" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C14">
+                <div class="info">
+                    <h2>DNI: 12345678F</h2>
+                    <h2>Email: mgomez@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S15">
+            <div id="cabecera">
+                <h2>ÁLEX MILÁN GÓMEZ VALLECILLO</h2>
+                <button onclick="desplegar('S15','C15','I15')"><img id="I15" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C15">
+                <div class="info">
+                    <h2>DNI: 54637281C</h2>
+                    <h2>Email: agomez@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S16">
+            <div id="cabecera">
+                <h2>PABLO GONZÁLEZ ÁLVAREZ</h2>
+                <button onclick="desplegar('S16','C16','I16')"><img id="I16" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C16">
+                <div class="info">
+                    <h2>DNI: 74635894</h2>
+                    <h2>Email: pgonzalez@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S17">
+            <div id="cabecera">
+                <h2>ALEJANDRO GONZÁLEZ BAONZA</h2>
+                <button onclick="desplegar('S17','C17','I17')"><img id="I17" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C17">
+                <div class="info">
+                    <h2>DNI: 78940524T</h2>
+                    <h2>Email: agonzalez@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S18">
+            <div id="cabecera">
+                <h2>JAIME GONZÁLEZ FÁBREGAS</h2>
+                <button onclick="desplegar('S18','C18','I18')"><img id="I18" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C18">
+                <div class="info">
+                    <h2>DNI: 90876542D</h2>
+                    <h2>Email: jgonzalez@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <div class="student1" id="S19">
+            <div id="cabecera">
+                <h2>ROGGER YURI HUAYLLASCO DE LA CRUZ</h2>
+                <button onclick="desplegar('S19','C19','I19')"><img id="I19" src="../Resources/desplegar.png" height ="30" width="50"></button>
+            </div>
+            <div class="contenido" id="C19">
+                <div class="info">
+                    <h2>DNI: 54637892G</h2>
+                    <h2>Email: ryuri@ucm.es</h2>
+                    <h2>Cursos Matriculados:</h2>
+                    <ol>
+                        <li><h2>Interfaces de Usuario</h2></li>
+                    </ol>                 
+                </div>
+            </div>
+        </div>
+        <section class="paginacion">
+            <ul>
+                <li><a href="Student1.html">1</a></li>
+				<li><a href="Student2.html" class="active">2</a></li>
+            </ul>
+        <div class="goup"><img id="I19" src="../Resources/desplegar_blanco.png" height ="30" width="50"></div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){ 
+            $(window).scroll(function(){ 
+                if ($(this).scrollTop() > 200) { 
+                    $('.goup').fadeIn(); 
+                } else { 
+                    $('.goup').fadeOut(); 
+                } 
+            }); 
+            $('.goup').click(function(){ 
+                $("html, body").animate({ scrollTop: 0 }, 600); 
+                return false; 
+            }); 
+        });
+    </script>
+</body>
+</html>

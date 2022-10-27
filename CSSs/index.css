@@ -1,0 +1,257 @@
+
+/* MAIN */
+
+body{
+    margin: 0;
+    background-image: url(../Resources/FondoPizarra.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+html::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #434343;
+    border-radius: 16px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25),inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+html::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#434343,#434343 1px,#111 0,#111);
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #011811;
+    height: 15vh;
+    width: 100%; 
+    position: sticky;
+    top: 0;
+}
+.cuenta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3%;
+}
+.user{
+    color: #53a43f;
+}
+.icono{
+    height: 100px;
+    width: 180px;
+    margin-left: 4%;
+}
+.icono:hover{
+    cursor: pointer;
+}  
+.logo{
+    height: 80px;
+    width: 80px;
+    margin-left: 15px;
+}
+.titulo{
+    margin-left: 5%;
+    color: white;
+}
+.circle-container div { 
+    position: absolute; 
+    top: 43%; 
+    left: 45%; 
+    width: 13em; 
+    height: 13em; 
+}
+.circle-container div img { 
+    width: 100%; 
+}
+img:not(.logo, .icono):hover{
+    cursor:pointer;
+}
+.deg45 {
+    transform: rotate(45deg) translate(15em) rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.deg135 {
+    transform: rotate(135deg) translate(15em) rotate(-135deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.deg225 {
+    transform: rotate(225deg) translate(15em) rotate(-225deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.deg315 {
+    transform: rotate(315deg) translate(15em) rotate(-315deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+main{
+    margin-top: 8vh;
+}
+
+/* STUDENT */
+
+.leyenda{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.leyenda h2{
+    margin-left:8%;
+    color: white;
+    font-style: italic;
+}
+
+#search{
+    border-top:thin solid  #e5e5e5;
+    border-right:thin solid #e5e5e5;
+    border-bottom:0;
+    border-left:thin solid  #e5e5e5;
+    box-shadow:0px 1px 1px 1px #e5e5e5;
+    float:left;
+    height:28px;
+    margin:10px 0 0 .5em; 
+    outline:0;
+    padding:.4em 0 .4em .6em; 
+    width:183px; 
+}
+   
+#button-holder{
+    background-color: #7dff5d;
+    border-top:thin solid #e5e5e5;
+    box-shadow:1px 1px 1px 1px #e5e5e5;
+    cursor:pointer;
+    float:left;
+    height:27px;
+    margin:10px 0 0 0;
+    text-align:center;
+    width:50px;
+}
+   
+#button-holder img{
+    margin:4px;
+    width:20px; 
+}
+
+.student1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: white;
+}
+.student1:nth-child(even){
+    background-color:#7dff5d;
+}
+.student1:nth-child(odd){
+    background-color:#d1ffc5;
+}
+
+#cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 8%;
+}
+
+#cabecera button{
+    margin-right: 5%;
+    background-color: transparent;
+    border: none;
+}
+
+.info{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10%;
+}
+
+.contenido{
+    display: none;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.student1:nth-child(even) .contenido{
+    background-color:#7dff5d;
+}
+.student1:nth-child(odd) .contenido{
+    background-color:#d1ffc5;
+}
+
+.info h2{
+    margin:0;
+}
+.info ol{
+    margin:0;
+    list-style-type: circle;
+}
+
+.paginacion {
+	margin:20px 0;
+}
+
+.paginacion ul {
+	list-style:none;
+	text-align: center;
+}
+
+.paginacion ul li {
+	display:inline-block;
+	margin-right:10px;
+}
+
+.paginacion ul li a {
+	display:block;
+	padding:10px 20px;
+	color:#fff;
+	background:#196d04;
+	text-decoration: none;
+}
+
+.paginacion ul li a:hover {
+	background:#42a629;
+}
+
+.paginacion ul li .active {
+	background:#42a629;
+	font-weight:bold;
+}
+
+.goup{
+	background:#196d04;
+	bottom:0px;
+	display: flex;
+    align-items: center;
+	height: 50px;
+	position: fixed;
+	right:0px;
+	width:50px;
+}
