@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    background-image: url(../Resources/FondoPizarra.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+  
+#main {
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+h1, h3 {
+    text-align: center;
+    color: beige;
+}
+  
+#tabs{
+    position: relative;
+}
+
+span.diana {
+    position: fixed;
+    display: none;
+}
+  
+.diana + a {
+    display: block;
+    float: left;
+    height: 2em;
+    line-height: 2em;
+    padding: 0 10px;
+    border: 3px solid LimeGreen;
+    background-color: seagreen;
+    color: white;
+    margin-bottom: 0px;
+    border-radius: 10px 10px 0 0;
+    margin-right: 0px;
+    text-decoration:none;
+}
+  
+.diana:target + a {
+    background-color: gainsboro;
+    color: black;
+    border-bottom-color: transparent; 
+}
+  
+#pnl_1, #pnl_2, #pnl_3{
+    position: absolute;
+    top: 31px;
+    left: 0;
+    border: none;
+    clear: both;
+    overflow: hidden;
+}
+#pnl_1 > div, #pnl_2 > div, #pnl_3 > div{
+  
+    opacity: 0;
+    transition: all 0.1s ease;
+    padding: 30px;
+}
+
+.contenidoPestania {
+    text-align: center;
+    background-color: Gainsboro;
+    justify-content: center;
+}
+
+button {
+    background-color: LimeGreen;
+    margin-top: 2%;
+    border-radius: 10px;
+    font-size: 17px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+  
+#uno:target ~ #pnl_1, #dos:target ~ #pnl_2, #tres:target ~ #pnl_3{
+    position: static;
+    border: 3px solid LimeGreen;
+    border-radius: 0 10px 10px 10px;
+    cursor: pointer;
+}
+  
+#uno:target ~ #pnl_1 > div, #dos:target ~ #pnl_2 > div, #tres:target ~ #pnl_3 > div{
+    opacity: 1;
+    transition: all 1s ease;
+}
