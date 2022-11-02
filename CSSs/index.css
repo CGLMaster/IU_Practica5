@@ -115,12 +115,12 @@ main{
 }
 
 .leyenda h2{
-    margin-left:4%;
+    margin-left:1%;
     font-size: x-large;
     color: white;
 }
 #DNI1{
-    margin-left:12%;
+    margin-left:10%;
 }
 
 #search{
@@ -172,7 +172,7 @@ main{
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    margin-left: 4%;
+    margin-left: 1%;
 }
 
 #cabecera h2{
