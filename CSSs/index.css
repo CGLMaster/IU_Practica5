@@ -267,3 +267,14 @@ main{
 	right:0px;
 	width:50px;
 }
+
+.editar{
+    height: 50px;
+    width: 50px;
+}
+
+.eliminar{
+    height: 48px;
+    width: 50px;
+    margin-left: 15px;
+}
