@@ -19,16 +19,19 @@
         </header>
 
         <main class="container">
-            <h2 class="enunciado">Listado de cursos disponibles:</h2>
+            <div class="enunciadoBtnAdd">
+                <div><h2 class="enunciado">Listado de cursos disponibles:</h2></div>
+                <a href="#popup"><div class="btnAddDiv"><button class="botonAdd">Añadir Nuevo Curso</button></div></a>
+            </div>
             <ul class="list-group">
                 <li class="list-group-item1">
                     <div class="listItemContent">
                         <div class="cursoInfo">
-                            <section><h4>Álgebra lineal</h4></section>
+                            <section><h4>Hojas de cálculo con Excel I</h4></section>
                             <section>
-                                <strong>ID:</strong> 22-230001 &nbsp;&nbsp;
-                                <strong>Área:</strong> Matemáticas &nbsp;&nbsp;
-                                <strong>Nivel:</strong> 1
+                                <strong>ID:</strong> EXCEL1 &nbsp;&nbsp;
+                                <strong>Área:</strong> Ofimática &nbsp;&nbsp;
+                                <strong>Nivel:</strong> Iniciación
                             </section>
                         </div>
 
@@ -44,11 +47,11 @@
                 <li class="list-group-item2">
                     <div class="listItemContent">
                         <div class="cursoInfo">
-                            <section><h4>Cáculo</h4></section>
+                            <section><h4>Hojas de cálculo con Excel II</h4></section>
                             <section>
-                                <strong>ID:</strong> 22-230002 &nbsp;&nbsp;
-                                <strong>Área:</strong> Matemáticas &nbsp;&nbsp;
-                                <strong>Nivel:</strong> 1
+                                <strong>ID:</strong> EXCEL2 &nbsp;&nbsp;
+                                <strong>Área:</strong> Ofimática &nbsp;&nbsp;
+                                <strong>Nivel:</strong> Generalista
                             </section>
                         </div>
                     
@@ -222,5 +225,15 @@
                 </li>
             </ul>
         </main>
+
+        <div id="popup" class="overlay">
+            <div id="popupBody">
+                <h2>Título de la ventana</h2>
+                <a id="cerrar" href="#">&times;</a>
+                <div class="popupContent">
+                    <p>Este es el contenido</p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

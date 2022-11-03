@@ -64,10 +64,21 @@ header {
     color: white;
 }
 
+.container {
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.enunciadoBtnAdd {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    padding-right: 2%;
+}
+
 .enunciado {
     color: azure;
-    margin-top: 2%;
-    margin-bottom: 1%;
 }
 
 .listItemContent {
@@ -79,6 +90,8 @@ header {
 
 .list-group-item1 {
     background-color: #7dff5d;
+    border-radius: 10px;
+    margin-bottom: 0.5%;
 }
 
 .cursoInfo {
@@ -95,11 +108,11 @@ header {
 .botonMod {
     margin-right: 5%;
     border-radius: 10px;
-    background-color: #53a43f;
+    background-color: gold;
 }
 
 .botonMod:hover {
-    background-color: LimeGreen;
+    background-color: khaki;
 }
 
 .botonDel {
@@ -112,10 +125,71 @@ header {
     background-color: salmon;
 }
 
+.btnAddDiv {
+    font-size: 18px;
+}
+
+.botonAdd {
+    border-radius: 10px;
+    margin-top: 3%;
+    background-color: limegreen;
+}
+
+.botonAdd:hover {
+    background-color: palegreen;
+}
+
 .list-group-item2 {
     background-color: #d1ffc5;
+    border-radius: 10px;
+    margin-bottom: 0.5%;
 }
 
 section {
     margin-left: 2%;
+}
+
+/*Para pop-up sin JS*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+#popupBody{
+    width: 46%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: #FFF;
+    position: relative;
+    transition: all 5s ease-in-out;
+    margin: 20% auto;    
+}
+
+#cerrar{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
 }
