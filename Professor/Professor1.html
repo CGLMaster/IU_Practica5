@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">    <title>Document</title>
     <link href="../CSSs/index.css" rel="stylesheet">
     <title>GUI</title>
 </head>
@@ -16,8 +17,280 @@
             <img class="logo" src="../Resources/perfil.png">
         </div>
     </header>
-    <div>
-        
-    </div>
+    <main class="container">
+        <div class="leyenda row d-flex justify-content-between">
+            <h2 class="col">Nombre y Apellidos</h2>
+            <h2 class="col" id="DNI1">DNI</h2>
+            <h2 class="col">Email</h2>
+            <div class="col">
+                <input type="search" placeholder='Buscar...' id='search'>
+                <div id='button-holder'>
+                    <img src='../Resources/lupe.png'/>
+                </div>
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S1">
+            <div id="cabecera">
+                <h2 class="col">MARÍA ELVIRA ALBERT ALBIOL</h2>
+                <h2 class="col" id="DNI">12387575R</h2>
+                <h2 class="col">elvira@sip.ucm.es</h2>
+                <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div>
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S2">
+            <div id="cabecera">
+                <h2 class="col">PURIFICACIÓN ARENAS SÁNCHEZ</h2>
+                <h2 class="col" id="DNI">12389175T</h2>
+                <h2 class="col">puri@sip.ucm.es</h2>
+                 <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div>
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S3">
+            <div id="cabecera">
+                <h2 class="col">JAVIER ARROYO GALLARDO</h2>
+                <h2 class="col" id="DNI">88587575K</h2>
+                <h2 class="col">javier.arroyo@fdi.ucm.es</h2>
+                 <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div>
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S4">
+            <div id="cabecera">
+                <h2 class="col">DANIEL BASCONES ARROYO</h2>
+                <h2 class="col" id="DNI">91869367J</h2>
+                <h2 class="col">danibasc@ucm.es</h2>
+                 <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div>
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S5">
+            <div id="cabecera">
+                <h2 class="col">MIGUEL BENITO PAREJO</h2>
+                <h2 class="col" id="DNI">53647766J</h2>
+                <h2 class="col">mibeni01@ucm.es</h2>
+                 <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div>
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S6">
+            <div id="cabecera">
+                <h2 class="col">MARGARITA BRADLEY DELSO</h2>
+                <h2 class="col" id="DNI">54887111L</h2>
+                <h2 class="col">bradley@sip.ucm.es</h2>
+                 <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div>
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S7">
+            <div id="cabecera">
+                <h2 class="col">JAVIER BRAVO AGAPITO</h2>
+                <h2 class="col" id="DNI">98839111X</h2>
+                <h2 class="col">jabrav01@ucm.es</h2>
+                 <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div>
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S8">
+            <div id="cabecera">
+                <h2 class="col">RAFAEL CABALLERO ROLDÁN</h2>
+                <h2 class="col" id="DNI">92523776P</h2>
+                <h2 class="col">rafa@sip.ucm.es</h2>
+                 <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div>
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S9">
+            <div id="cabecera">
+                <h2 class="col">JESUS CÁCERES TELLO</h2>
+                <h2 class="col" id="DNI">88756938Y</h2>
+                <h2 class="col">jescacer@ucm.es</h2>
+                 <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div>
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S10">
+            <div id="cabecera">
+                <h2 class="col">ANTONIO CALVO MORATA</h2>
+                <h2 class="col" id="DNI">00922290W</h2>
+                <h2 class="col">antcal01@ucm.es</h2>
+                 <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div> 
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S11">
+            <div id="cabecera">
+                <h2 class="col">JORGE CARMONA RUBER</h2>
+                <h2 class="col" id="DNI">99562246C</h2>
+                <h2 class="col">jcarmona@sip.ucm.es</h2>
+                 <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div>  
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S12">
+            <div id="cabecera">
+                <h2 class="col">FERNANDO CASTRO RODRÍGUEZ</h2>
+                <h2 class="col" id="DNI">91223985T</h2>
+                <h2 class="col">fcastror@fis.ucm.es</h2>
+                 <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div> 
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S13">
+            <div id="cabecera">
+                <h2 class="col">SANDRA CATALÁN PALLARÉS</h2>
+                <h2 class="col" id="DNI">24356745L</h2>
+                <h2 class="col">scatalan@ucm.es</h2>
+                 <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div>  
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S14">
+            <div id="cabecera">
+                <h2 class="col">JUAN ANTONIO CLEMENTE BARREIRA</h2> 
+                <h2 class="col" id="DNI">12345678F</h2>
+                <h2 class="col">ja.clemente@fdi.ucm.es</h2>
+                 <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div>
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S15">
+            <div id="cabecera">
+                <h2 class="col">JESUS CORREAS FERNÁNDEZ</h2>
+                <h2 class="col" id="DNI">54637281C</h2>
+                <h2 class="col">jcorreas@fdi.ucm.es</h2>
+                 <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div>
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S16">
+            <div id="cabecera">
+                <h2 class="col">MARIA LUIS COSTERO VALERO</h2>
+                <h2 class="col" id="DNI">74635894T</h2>
+                <h2 class="col">lcostero@ucm.es</h2>
+                 <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div>  
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S17">
+            <div id="cabecera">
+                <h2 class="col">SEGUNDO ESTEBAN SAN ROMÁN</h2>
+                <h2 class="col" id="DNI">78940524T</h2>
+                <h2 class="col">segundo@dacya.ucm.es</h2>
+                 <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div>
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S18">
+            <div id="cabecera">
+                <h2 class="col">SONIA ESTÉVEZ MARTÍN</h2>
+                <h2 class="col" id="DNI">90876542D</h2>
+                <h2 class="col">s.estevez@fdi.ucm.es</h2>
+                 <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div>
+            </div>
+        </div>
+        <div class="student1 row d-flex justify-content-between" id="S19">
+            <div id="cabecera">
+                <h2 class="col">JUAN CARLOS FABERO JIMÉNEZ</h2> 
+                <h2 class="col" id="DNI">54637892G</h2>
+                <h2 class="col">fabero@dacya.ucm.es</h2>
+                 <div class="botones col">
+                    <img class="editar" src="../Resources/lapiz.png" title="Editar alumno" data-bs-toggle="modal" data-bs-target="#editModal">
+                    <img class="eliminar" src="../Resources/eliminar.png" title="Eliminar alumno">
+                </div>
+            </div>
+        </div>
+        <section class="paginacion">
+            <ul>
+                <li><a href="Professor1.html" class="active">1</a></li>
+				<li><a href="Professor2.html">2</a></li>
+            </ul>
+        <div class="goup"><img id="I19" src="../Resources/desplegar_blanco.png" height ="30" width="50"></div>
+        <!-- Button trigger modal -->
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){ 
+            $(window).scroll(function(){ 
+                if ($(this).scrollTop() > 200) { 
+                    $('.goup').fadeIn(); 
+                } else { 
+                    $('.goup').fadeOut(); 
+                } 
+            }); 
+            $('.goup').click(function(){ 
+                $("html, body").animate({ scrollTop: 0 }, 600); 
+                return false; 
+            }); 
+        });
+    </script>
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Editar información del alumn@</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="name" class="col-form-label">Nombre y apellidos:</label>
+                      <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                      <label for="dni" class="col-form-label">DNI:</label>
+                      <input type="text" class="form-control" id="dni">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-form-label">Email:</label>
+                        <input type="text" class="form-control" id="email">
+                      </div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Guardar cambios</button>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
