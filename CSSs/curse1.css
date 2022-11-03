@@ -74,7 +74,7 @@ header {
     justify-content: space-between;
     margin-bottom: 1%;
     margin-top: 2%;
-    padding-right: 2%;
+    padding-right: 7%;
 }
 
 .enunciado {
@@ -132,13 +132,9 @@ header {
 }
 
 .botonAdd {
-    border-radius: 10px;
+    border: 0;
     margin-top: 3%;
-    background-color: limegreen;
-}
-
-.botonAdd:hover {
-    background-color: palegreen;
+    background-color: transparent;
 }
 
 .list-group-item2 {
