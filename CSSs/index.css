@@ -120,6 +120,16 @@ main{
     color: white;
 }
 
+.leyenda > div{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1%;
+}
+
+.leyenda > div > img{
+    margin-right: 15px;
+}
+
 #search{
     border-top:thin solid  #e5e5e5;
     border-right:thin solid #e5e5e5;
