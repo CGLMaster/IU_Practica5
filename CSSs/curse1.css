@@ -107,22 +107,24 @@ header {
 
 .botonMod {
     margin-right: 5%;
-    border-radius: 10px;
-    background-color: gold;
+    border: 0;
+    background-color: transparent;
 }
 
-.botonMod:hover {
-    background-color: khaki;
+.edit {
+    width: 50px;
+    height: 50px;
 }
 
 .botonDel {
     margin-right: 5%;
-    border-radius: 10px;
-    background-color: crimson;
+    border: 0;
+    background-color: transparent;
 }
 
-.botonDel:hover {
-    background-color: salmon;
+.delete {
+    width: 50px;
+    height: 50px;
 }
 
 .btnAddDiv {
