@@ -19,21 +19,25 @@
         </header>
 
         <main class="container">
-            <div class="enunciadoBtnAdd">
+            <div class="enunciadoBtnAdd d-flex justify-content-between">
                 <div><h2 class="enunciado">Listado de cursos disponibles:</h2></div>
-                <a href="#popup">
-                    <div class="btnAddDiv">
-                        <button class="botonAdd">
-                            <img src="../Resources/aniadir.png" class="edit">
-                        </button>
+                <div class="searchAdd">
+                    <div class="botonAdd">
+                        <img src="../Resources/aniadir.png" height="50" width="50" title="Añadir curso" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1&Añadir nuevo curso">
                     </div>
-                </a>
+                    <div class="busquedaLupa">
+                        <input type="search" placeholder='Buscar...' id='search'>
+                        <div id='button-holder'>
+                            <img src='../Resources/lupe.png'/>
+                        </div>
+                    </div>
+                </div>
             </div>
             <ul class="list-group">
                 <li class="list-group-item1">
                     <div class="listItemContent">
                         <div class="cursoInfo">
-                            <section><h4>Hojas de cálculo con Excel I</h4></section>
+                            <section><h3>Hojas de cálculo con Excel I</h3></section>
                             <section>
                                 <strong>ID:</strong> EXCEL1 &nbsp;&nbsp;
                                 <strong>Área:</strong> Ofimática &nbsp;&nbsp;
@@ -41,8 +45,12 @@
                             </section>
                         </div>
 
-                        <div class="botonesModDel">
+                        <div class="botonesListModDel">
                             <section>
+                                <button data-bs-toggle="modal" data-bs-target="#studentsModal" class="listStudents">
+                                    Estudiantes
+                                    <img src="../Resources/desplegar_blanco.png" height="20">
+                                </button>
                                 <button class="botonMod">
                                     <img src="../Resources/lapiz.png" class="edit">
                                 </button>
@@ -57,7 +65,7 @@
                 <li class="list-group-item2">
                     <div class="listItemContent">
                         <div class="cursoInfo">
-                            <section><h4>Hojas de cálculo con Excel II</h4></section>
+                            <section><h3>Hojas de cálculo con Excel II</h3></section>
                             <section>
                                 <strong>ID:</strong> EXCEL2 &nbsp;&nbsp;
                                 <strong>Área:</strong> Ofimática &nbsp;&nbsp;
@@ -65,8 +73,12 @@
                             </section>
                         </div>
                     
-                        <div class="botonesModDel">
+                        <div class="botonesListModDel">
                             <section>
+                                <button data-bs-toggle="modal" data-bs-target="#studentsModal" class="listStudents">
+                                    Estudiantes
+                                    <img src="../Resources/desplegar_blanco.png" height="20">
+                                </button>
                                 <button class="botonMod">
                                     <img src="../Resources/lapiz.png" class="edit">
                                 </button>
@@ -81,7 +93,7 @@
                 <li class="list-group-item1">
                     <div class="listItemContent">
                         <div class="cursoInfo">
-                            <section><h4>Edición de textos en Word I</h4></section>
+                            <section><h3>Edición de textos en Word I</h3></section>
                             <section>
                                 <strong>ID:</strong> WORD1 &nbsp;&nbsp;
                                 <strong>Área:</strong> Ofimática &nbsp;&nbsp;
@@ -89,8 +101,12 @@
                             </section>
                         </div>
 
-                        <div class="botonesModDel">
+                        <div class="botonesListModDel">
                             <section>
+                                <button data-bs-toggle="modal" data-bs-target="#studentsModal" class="listStudents">
+                                    Estudiantes
+                                    <img src="../Resources/desplegar_blanco.png" height="20">
+                                </button>
                                 <button class="botonMod">
                                     <img src="../Resources/lapiz.png" class="edit">
                                 </button>
@@ -105,7 +121,7 @@
                 <li class="list-group-item2">
                     <div class="listItemContent">
                         <div class="cursoInfo">
-                            <section><h4>Edición de textos en Word II</h4></section>
+                            <section><h3>Edición de textos en Word II</h3></section>
                             <section>
                                 <strong>ID:</strong> WORD2 &nbsp;&nbsp;
                                 <strong>Área:</strong> Ofimática &nbsp;&nbsp;
@@ -113,8 +129,12 @@
                             </section>
                         </div>
 
-                        <div class="botonesModDel">
+                        <div class="botonesListModDel">
                             <section>
+                                <button data-bs-toggle="modal" data-bs-target="#studentsModal" class="listStudents">
+                                    Estudiantes
+                                    <img src="../Resources/desplegar_blanco.png" height="20">
+                                </button>
                                 <button class="botonMod">
                                     <img src="../Resources/lapiz.png" class="edit">
                                 </button>
@@ -129,7 +149,7 @@
                 <li class="list-group-item1">
                     <div class="listItemContent">
                         <div class="cursoInfo">
-                            <section><h4>Aprende a programar con Scratch</h4></section>
+                            <section><h3>Aprende a programar con Scratch</h3></section>
                             <section>
                                 <strong>ID:</strong> SCRATCH &nbsp;&nbsp;
                                 <strong>Área:</strong> Tecnologías Informáticas &nbsp;&nbsp;
@@ -137,8 +157,12 @@
                             </section>
                         </div>
 
-                        <div class="botonesModDel">
+                        <div class="botonesListModDel">
                             <section>
+                                <button data-bs-toggle="modal" data-bs-target="#studentsModal" class="listStudents">
+                                    Estudiantes
+                                    <img src="../Resources/desplegar_blanco.png" height="20">
+                                </button>
                                 <button class="botonMod">
                                     <img src="../Resources/lapiz.png" class="edit">
                                 </button>
@@ -153,7 +177,7 @@
                 <li class="list-group-item2">
                     <div class="listItemContent">
                         <div class="cursoInfo">
-                            <section><h4>Comunicación en redes sociales</h4></section>
+                            <section><h3>Comunicación en redes sociales</h3></section>
                             <section>
                                 <strong>ID:</strong> RRSS &nbsp;&nbsp;
                                 <strong>Área:</strong> Internet &nbsp;&nbsp;
@@ -161,8 +185,12 @@
                             </section>
                         </div>
 
-                        <div class="botonesModDel">
+                        <div class="botonesListModDel">
                             <section>
+                                <button data-bs-toggle="modal" data-bs-target="#studentsModal" class="listStudents">
+                                    Estudiantes
+                                    <img src="../Resources/desplegar_blanco.png" height="20">
+                                </button>
                                 <button class="botonMod">
                                     <img src="../Resources/lapiz.png" class="edit">
                                 </button>
@@ -177,7 +205,7 @@
                 <li class="list-group-item1">
                     <div class="listItemContent">
                         <div class="cursoInfo">
-                            <section><h4>Diseño web con Wordpress</h4></section>
+                            <section><h3>Diseño web con Wordpress</h3></section>
                             <section>
                                 <strong>ID:</strong> WORDPRESS &nbsp;&nbsp;
                                 <strong>Área:</strong> Internet &nbsp;&nbsp;
@@ -185,8 +213,12 @@
                             </section>
                         </div>
 
-                        <div class="botonesModDel">
+                        <div class="botonesListModDel">
                             <section>
+                                <button data-bs-toggle="modal" data-bs-target="#studentsModal" class="listStudents">
+                                    Estudiantes
+                                    <img src="../Resources/desplegar_blanco.png" height="20">
+                                </button>
                                 <button class="botonMod">
                                     <img src="../Resources/lapiz.png" class="edit">
                                 </button>
@@ -201,7 +233,7 @@
                 <li class="list-group-item2">
                     <div class="listItemContent">
                         <div class="cursoInfo">
-                            <section><h4>Introducción a la programación en Python</h4></section>
+                            <section><h3>Introducción a la programación en Python</h3></section>
                             <section>
                                 <strong>ID:</strong> PYTHON &nbsp;&nbsp;
                                 <strong>Área:</strong> Tecnologías Informáticas &nbsp;&nbsp;
@@ -209,8 +241,12 @@
                             </section>
                         </div>
 
-                        <div class="botonesModDel">
+                        <div class="botonesListModDel">
                             <section>
+                                <button data-bs-toggle="modal" data-bs-target="#studentsModal" class="listStudents">
+                                    Estudiantes
+                                    <img src="../Resources/desplegar_blanco.png" height="20">
+                                </button>
                                 <button class="botonMod">
                                     <img src="../Resources/lapiz.png" class="edit">
                                 </button>
@@ -225,7 +261,7 @@
                 <li class="list-group-item1">
                     <div class="listItemContent">
                         <div class="cursoInfo">
-                            <section><h4>Textos científicos con LaTex</h4></section>
+                            <section><h3>Textos científicos con LaTex</h3></section>
                             <section>
                                 <strong>ID:</strong> LATEX &nbsp;&nbsp;
                                 <strong>Área:</strong> Ofimática &nbsp;&nbsp;
@@ -233,8 +269,12 @@
                             </section>
                         </div>
 
-                        <div class="botonesModDel">
+                        <div class="botonesListModDel">
                             <section>
+                                <button data-bs-toggle="modal" data-bs-target="#studentsModal" class="listStudents">
+                                    Estudiantes
+                                    <img src="../Resources/desplegar_blanco.png" height="20">
+                                </button>
                                 <button class="botonMod">
                                     <img src="../Resources/lapiz.png" class="edit">
                                 </button>
@@ -249,7 +289,7 @@
                 <li class="list-group-item2">
                     <div class="listItemContent">
                         <div class="cursoInfo">
-                            <section><h4>Ofimática en la nube con Google Drive</h4></section>
+                            <section><h3>Ofimática en la nube con Google Drive</h3></section>
                             <section>
                                 <strong>ID:</strong> DRIVE &nbsp;&nbsp;
                                 <strong>Área:</strong> Ofimática &nbsp;&nbsp;
@@ -257,8 +297,12 @@
                             </section>
                         </div>
 
-                        <div class="botonesModDel">
+                        <div class="botonesListModDel">
                             <section>
+                                <button data-bs-toggle="modal" data-bs-target="#studentsModal" class="listStudents">
+                                    Estudiantes
+                                    <img src="../Resources/desplegar_blanco.png" height="20">
+                                </button>
                                 <button class="botonMod">
                                     <img src="../Resources/lapiz.png" class="edit">
                                 </button>
@@ -270,16 +314,82 @@
                     </div>
                 </li>
             </ul>
+
+            <!-- Para paginar -->
+            <section class="paginacion">
+                <ul>
+                    <li><a href="Student1.html" class="active">1</a></li>
+                    <li><a href="Student2.html">2</a></li>
+                </ul>
+                <div class="goup">
+                    <img id="I19" src="../Resources/desplegar_blanco.png" height ="30" width="50">
+                </div>
+            </section>
         </main>
 
-        <div id="popup" class="overlay">
-            <div id="popupBody">
-                <h2>Título de la ventana</h2>
-                <a id="cerrar" href="#">&times;</a>
-                <div class="popupContent">
-                    <p>Este es el contenido</p>
-                </div>
-            </div>
-        </div>
+        <!-- SCRIPTS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){ 
+                $(window).scroll(function(){ 
+                    if ($(this).scrollTop() > 200) { 
+                        $('.goup').fadeIn(); 
+                    } else { 
+                        $('.goup').fadeOut(); 
+                    } 
+                }); 
+                $('.goup').click(function(){ 
+                    $("html, body").animate({ scrollTop: 0 }, 600); 
+                    return false; 
+                }); 
+            });
+        </script>
+
+        <script>
+            $(document).ready(function (e) {
+              $('#editModal').on('show.bs.modal', function(e) {    
+                 var id = $(e.relatedTarget).data().id;
+                 var array = id.split('&');
+                 if(array[0] === '1'){
+                    document.getElementById("exampleModalLabel").innerHTML= array[1];
+                    document.getElementById("guardar").innerHTML = "Añadir";
+                    $(e.currentTarget).find('#name').val(array[2]);
+                    $(e.currentTarget).find('#dni').val(array[3]);
+                    $(e.currentTarget).find('#email').val(array[4]);
+                 }
+                 else{
+                    document.getElementById("exampleModalLabel").innerHTML= "Editar información del alumn@";
+                    document.getElementById("guardar").innerHTML = "Guardar cambios";
+                    $(e.currentTarget).find('#name').val(array[1]);
+                    $(e.currentTarget).find('#dni').val(array[2]);
+                    $(e.currentTarget).find('#email').val(array[3]);
+                 }
+              });
+            });
+         </script>
+         
+         <script>
+            $('#aceptar1').on('click', function(e)  {
+                console.log("entre");
+                $('#bt1').addClass("disabled");
+                document.getElementById("t1").style.textDecoration = "line-through";
+            })
+            $('#aceptar2').on('click', function (e) {
+                $('#bt2').addClass("disabled");
+                document.getElementById("t2").style.textDecoration = "line-through";
+            })
+            $('#aceptar3').on('click', function (e) {
+                $('#bt3').addClass("disabled");
+                document.getElementById("t3").style.textDecoration = "line-through";
+            })
+            $('#aceptar4').on('click', function (e) {
+                $('#bt4').addClass("disabled");
+                document.getElementById("t4").style.textDecoration = "line-through";
+            })
+            $('#aceptar5').on('click', function (e) {
+                $('#bt5').addClass("disabled");
+                document.getElementById("t5").style.textDecoration = "line-through";
+            })
+         </script>
     </body>
 </html>
