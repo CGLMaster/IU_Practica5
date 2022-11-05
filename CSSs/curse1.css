@@ -5,6 +5,7 @@ body{
     background-attachment: fixed;
 }
 
+/* Para la scrrollbar */
 html::-webkit-scrollbar {
     width: 16px;
     height: 16px;
@@ -20,6 +21,7 @@ html::-webkit-scrollbar-track {
     background: linear-gradient(90deg,#434343,#434343 1px,#111 0,#111);
 }
 
+/* La "navbar" */
 header {
     display: flex;
     flex-direction: row;
@@ -64,6 +66,7 @@ header {
     color: white;
 }
 
+/* Para el listado */
 .container {
     margin-top: 1%;
     margin-bottom: 2%;
@@ -203,6 +206,8 @@ section {
     display: flex;
 }
 
+
+/* Para paginar */
 .paginacion {
 	margin:20px 0;
 }
@@ -234,6 +239,7 @@ section {
 	font-weight:bold;
 }
 
+/* Para boton que sube arriba */
 .goup{
 	background:#196d04;
 	bottom:0px;
@@ -243,4 +249,20 @@ section {
 	position: fixed;
 	right:0px;
 	width:50px;
+}
+
+#cursesModal > div > div > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:3%;
+}
+
+#cursesModal > div > div > div > div > h2{
+    font-size: 18px;
+}
+
+img:not(.logo, .icono):hover{
+    cursor:pointer;
 }
