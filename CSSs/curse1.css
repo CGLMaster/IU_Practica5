@@ -133,7 +133,6 @@ header {
     background-color: #7dff5d;
     border-radius: 10px;
     margin-bottom: 0.5%;
-    list-style: none;
 }
 
 .cursoInfo {
@@ -190,6 +189,9 @@ header {
     background-color: #d1ffc5;
     border-radius: 10px;
     margin-bottom: 0.5%;
+}
+
+ul {
     list-style: none;
 }
 
@@ -199,4 +201,46 @@ section {
 
 .searchAdd {
     display: flex;
+}
+
+.paginacion {
+	margin:20px 0;
+}
+
+.paginacion ul {
+	list-style:none;
+	text-align: center;
+}
+
+.paginacion ul li {
+	display:inline-block;
+	margin-right:10px;
+}
+
+.paginacion ul li a {
+	display:block;
+	padding:10px 20px;
+	color:#fff;
+	background:#196d04;
+	text-decoration: none;
+}
+
+.paginacion ul li a:hover {
+	background:#42a629;
+}
+
+.paginacion ul li .active {
+	background:#42a629;
+	font-weight:bold;
+}
+
+.goup{
+	background:#196d04;
+	bottom:0px;
+	display: flex;
+    align-items: center;
+	height: 50px;
+	position: fixed;
+	right:0px;
+	width:50px;
 }
