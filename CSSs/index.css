@@ -320,3 +320,7 @@ main{
     color:#717070
 }
 
+.modal-lg {
+    max-width: 33% !important;
+}
+
