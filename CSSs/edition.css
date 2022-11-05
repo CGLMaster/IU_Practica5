@@ -1,0 +1,16 @@
+.participantes {
+    width: 50px;
+    height: 50px;
+}
+
+.botonesEd {
+    text-align: center;
+    vertical-align: top;
+    margin: auto;
+    width: 30%;
+    font-size: 18px;
+}
+
+.addEditionForm{
+    vertical-align: top;
+}
