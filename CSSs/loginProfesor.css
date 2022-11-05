@@ -68,41 +68,6 @@ header{
 .circle-container div img { 
     width: 100%; 
 }
-img:not(.logo, .icono):hover{
-    cursor:pointer;
-}
-.deg45 {
-    transform: rotate(45deg) translate(15em) rotate(-45deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-}
-.deg135 {
-    transform: rotate(135deg) translate(15em) rotate(-135deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-}
-.deg225 {
-    transform: rotate(225deg) translate(15em) rotate(-225deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-}
-.deg315 {
-    transform: rotate(315deg) translate(15em) rotate(-315deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-}
 
 main{
     margin-top: 8vh;
@@ -110,8 +75,19 @@ main{
 
 /* STUDENT */
 
+.mileyenda{
+    height: 55px;
+}
+
+.mileyenda h2{
+    margin-left:1%;
+    font-size: xx-large;
+    color: white;
+}
+
 .leyenda{
     height: 55px;
+    margin-top:3%;
 }
 
 .leyenda h2{
@@ -210,23 +186,17 @@ main{
     background-color:#196d04;
     border: none;
     border-radius: 10px;
+    font-size: 23px;
     height: 40px;
-    width: 90px;
+    width: 200px;
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-right: 20px;
 }
 
 .botones button:hover{
     background-color:#124c04;
-}
-
-.info{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 10%;
 }
 
 .contenido{
@@ -242,14 +212,6 @@ main{
 }
 .student1:nth-child(odd) .contenido{
     background-color:#d1ffc5;
-}
-
-.info h2{
-    margin:0;
-}
-.info ol{
-    margin:0;
-    list-style-type: circle;
 }
 
 .paginacion {
@@ -294,17 +256,6 @@ main{
 	width:50px;
 }
 
-.editar{
-    height: 50px;
-    width: 50px;
-}
-
-.eliminar{
-    height: 48px;
-    width: 50px;
-    margin-left: 15px;
-}
-
 #cursesModal > div > div > div > div {
     display: flex;
     flex-direction: row;
@@ -314,14 +265,9 @@ main{
 #cursesModal > div > div > div > div > h2{
     font-size: 18px;
 }
-
 #inicio > h3{
-    margin-left:155px;
+    margin-left:100px;
     font-size: 13px;
-    color:#717070;
-}
-
-.modal-lg {
-    max-width: 33% !important;
+    color:#717070
 }
 
