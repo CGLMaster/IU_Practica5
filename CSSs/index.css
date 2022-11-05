@@ -58,50 +58,85 @@ header{
     margin-left: 5%;
     color: white;
 }
-.circle-container div { 
-    position: absolute; 
-    top: 43%; 
-    left: 45%; 
-    width: 13em; 
-    height: 13em; 
-}
-.circle-container div img { 
-    width: 100%; 
-}
+
 img:not(.logo, .icono):hover{
     cursor:pointer;
 }
-.deg45 {
-    transform: rotate(45deg) translate(15em) rotate(-45deg);
+
+.container{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px
+}
+
+.fila1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fila2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.estudiante{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-right: 100px;
+}
+
+.estudiante > img{
+    height: 250px;
+    width: 250px;
+}
+
+.profesor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
 }
-.deg135 {
-    transform: rotate(135deg) translate(15em) rotate(-135deg);
+
+.profesor > img{
+    height: 250px;
+    width: 250px;
+}
+
+.curso{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-right: 100px;
+}
+
+.curso > img{
+    height: 250px;
+    width: 250px;
+}
+
+.edicion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
 }
-.deg225 {
-    transform: rotate(225deg) translate(15em) rotate(-225deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-}
-.deg315 {
-    transform: rotate(315deg) translate(15em) rotate(-315deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
+
+.edicion > img{
+    height: 250px;
+    width: 250px;
 }
 
 main{
@@ -309,6 +344,8 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    margin-top:3%;
 }
 
 #cursesModal > div > div > div > div > h2{
