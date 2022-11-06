@@ -29,7 +29,7 @@ header {
     align-items: center;
     background-color: #011811;
     height: 15vh;
-    width: 100%; 
+    width: 100%;
     position: sticky;
     top: 0;
 }
@@ -53,7 +53,7 @@ header {
 
 .icono:hover {
     cursor: pointer;
-}  
+}
 
 .logo {
     height: 80px;
@@ -72,30 +72,6 @@ header {
     margin-bottom: 2%;
 }
 
-.enunciadoBtnAdd {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1%;
-    margin-top: 5%;
-    margin-right: 2.5%;
-}
-
-.enunciado {
-    color: azure;
-    margin-left: 2%;
-    width: 100%;
-}
-
-.botonAdd {
-    background-color: #196d04;
-    border-radius: 10px;
-    margin-right: 5%;
-}
-
-.busquedaLupa {
-    display: flex;
-}
-
 #search{
     border-top:thin solid  #e5e5e5;
     border-right:thin solid #e5e5e5;
@@ -103,9 +79,9 @@ header {
     border-left:thin solid  #e5e5e5;
     box-shadow:0px 1px 1px 1px #e5e5e5;
     height:28px;
-    margin:10px 0 0 .5em; 
+    margin:10px 0 0 .5em;
     outline:0;
-    padding:.4em 0 .4em .6em; 
+    padding:.4em 0 .4em .6em;
     width:270px;
 }
 
@@ -119,7 +95,7 @@ header {
     text-align:center;
     width:30px;
 }
-   
+
 #button-holder img{
     margin:4px;
     width:20px;
@@ -158,8 +134,8 @@ header {
     border: none;
     border-radius: 10px;
     height: 35px;
-    width: 40%;
-    padding-left: 2.2%;
+    width: 35%;
+    padding-left: 2.8%;
     margin-right: 4%;
 }
 
@@ -202,9 +178,7 @@ section {
     margin-left: 2%;
 }
 
-.searchAdd {
-    display: flex;
-}
+
 
 
 /* Para paginar */
@@ -251,7 +225,13 @@ section {
 	width:50px;
 }
 
-#cursesModal > div > div > div > div {
+img:not(.logo, .icono):hover{
+    cursor:pointer;
+}
+
+/* Para la lista de alumnos */
+
+#cursesModal > div > div > div > div:not(#inicio) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -263,6 +243,111 @@ section {
     font-size: 18px;
 }
 
-img:not(.logo, .icono):hover{
-    cursor:pointer;
+#inicio{
+    margin-bottom: -4.5%;
+    width: 100%;
+}
+
+#inicio > h3{
+    font-size: 13px;
+    color:#717070;
+}
+
+.modal-lg {
+    max-width: 40vw !important;
+}
+
+.subtitulo {
+    text-align: center;
+}
+
+/* Para el encabezado con filtro */
+
+.encabezado {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonAdd {
+    /* margin-right: 5%; */
+}
+
+.seccionFiltro {
+    margin: auto;
+}
+/********/
+.multiselect {
+    background-color: white;
+    color: black;
+    margin-bottom: 3%;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#checkboxes {
+    /* display: none; */
+    border: 1px white solid;
+}
+
+#checkboxes label {
+    display: block;
+}
+
+#checkboxes label:hover {
+    background-color: #1e90ff;
+}
+
+.btnAplicarDiv {
+    /* background-color: #196d04;
+    border-radius: 10px;
+    color: white;
+    border: 0; */
+    margin-top: 5%;
+    text-align: center;
+}
+
+.btnAplicar {
+    background-color: #196d04;
+    border-radius: 10px;
+    color: white;
+    border: 0;
+}
+
+.btnAplicar:hover {
+    background-color: #124c04;
+}
+/********/
+
+.combobox1 {
+    background-color: violet;
+}
+
+.cuadroSelect1 {
+    /* background-color: peru; */
+}
+
+.seccionAddSearch {
+    display: flex;
+    /* background-color: blue; */
+}
+
+.busquedaLupa {
+    display: flex;
+    /* background-color: grey; */
 }
