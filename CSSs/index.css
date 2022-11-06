@@ -355,7 +355,8 @@ main{
 }
 
 #inicio > h3{
-    margin-left: 238px;
+    margin-left: 25%;
+    margin-right: 25%;
     font-size: 13px;
     color:#717070;
 }
