@@ -95,8 +95,8 @@ img:not(.logo, .icono):hover{
 }
 
 .estudiante > img{
-    height: 25vh;
-    width: 250px;
+    height: 27vh;
+    width: 13vw;
 }
 
 .profesor{
@@ -108,8 +108,8 @@ img:not(.logo, .icono):hover{
 }
 
 .profesor > img{
-    height: 25vh;
-    width: 250px;
+    height: 27vh;
+    width: 13vw;
 }
 
 .curso{
@@ -122,8 +122,8 @@ img:not(.logo, .icono):hover{
 }
 
 .curso > img{
-    height: 25vh;
-    width: 250px;
+    height: 27vh;
+    width: 13vw;
 }
 
 .edicion{
@@ -135,8 +135,8 @@ img:not(.logo, .icono):hover{
 }
 
 .edicion > img{
-    height: 25vh;
-    width: 250px;
+    height: 27vh;
+    width: 13vw;
 }
 
 main{
@@ -355,12 +355,12 @@ main{
 }
 
 #inicio > h3{
-    margin-left:155px;
+    margin-left: 238px;
     font-size: 13px;
     color:#717070;
 }
 
 .modal-lg {
-    max-width: 33% !important;
+    max-width: 40vw !important;
 }
 
