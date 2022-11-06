@@ -342,7 +342,7 @@ main{
     margin-left: 15px;
 }
 
-#cursesModal > div > div > div > div {
+#cursesModal > div > div > div > div:not(#inicio) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -354,9 +354,15 @@ main{
     font-size: 18px;
 }
 
+#inicio{
+    display: flex;
+    margin-bottom: 0.5%;
+    align-items: center;
+    justify-content: center ;
+    width: 100%;
+}
+
 #inicio > h3{
-    margin-left: 25%;
-    margin-right: 25%;
     font-size: 13px;
     color:#717070;
 }
