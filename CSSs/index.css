@@ -95,7 +95,7 @@ img:not(.logo, .icono):hover{
 }
 
 .estudiante > img{
-    height: 250px;
+    height: 25vh;
     width: 250px;
 }
 
@@ -108,7 +108,7 @@ img:not(.logo, .icono):hover{
 }
 
 .profesor > img{
-    height: 250px;
+    height: 25vh;
     width: 250px;
 }
 
@@ -122,7 +122,7 @@ img:not(.logo, .icono):hover{
 }
 
 .curso > img{
-    height: 250px;
+    height: 25vh;
     width: 250px;
 }
 
@@ -135,7 +135,7 @@ img:not(.logo, .icono):hover{
 }
 
 .edicion > img{
-    height: 250px;
+    height: 25vh;
     width: 250px;
 }
 
