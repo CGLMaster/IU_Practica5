@@ -4,83 +4,78 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <link href="CSSs/login.css" rel="stylesheet">
         <title>GUI</title>
     </head>
 
-    <body>
-        <section id="main">
-            <h1>Bienvenid@ al Sistema de Gestión de Matrículas de la UCM</h1>
-            <h2>Seleccione un perfil para acceder</h2>
-            <div id="tabs">
-                <span class="diana" id="uno"></span>
-                <a href="#uno" class="tab-e">Acceso Alumno</a>
-                <span class="diana" id="dos"></span>
-                <a href="#dos" class="tab-e">Acesso Profesor</a>
-                <span class="diana" id="tres"></span>
-                <a href="#tres" class="tab-e">Acceso Administrador</a>
-                
-                <div id="pnl_1">
-                    <div class="contenidoPestania">
-                        <form action="loginAlumno.html" method="">
-                            <p>
-                                <section>        
-                                    <label for="email" class="colocar_email">Introduzca su correo electronico:</label>
-                                    <input type="email" id="email" placeholder="Email UCM">
-                                </section>        
+    <body class="m-0 vh-100 row justify-content-center align-items-center">
+        <div class="tabs text-center">
+            <h1 class="titulo text-center">Bienvenid@ al Sistema de Gestión de Matrículas de la UCM</h1>
+            <h2 class="subtitulo text-center">Seleccione un perfil para acceder</h2>
+            <hr>
+            <div class="tab-container">
+                <div id="tab1" class="tab">
+                    <a href="#tab1"><strong>Acceso Alumno</strong></a>
+                    <div class="tab-content">
+                        <div class="login text-center">
+                            <div class="iconDiv"><img src="Resources/icono.PNG" width="125" height="80"></div>
+                            <form action="loginAlumno.html" method="post">
+                                <div>
+                                    <input type="text" name="u" placeholder="Nombre de Usuario" required="required" class="userDiv"/>
+                                </div>
+                                <div>
+                                    <input type="password" name="p" placeholder="Contraseña" required="required" class="contraseniaDiv"/>
+                                </div>
+                                <div>
+                                    <button type="submit" class="btnAcceso">Acceder</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div> 
+                </div>
 
-                                <div>                      
-                                    <button>Entrar</button>
+                <div id="tab2" class="tab">
+                    <a href="#tab2"><strong>Acceso Profesor</strong></a>
+                    <div class="tab-content">
+                        <div class="login text-center">
+                            <div class="iconDiv"><img src="Resources/icono.PNG" width="125" height="80"></div>
+                            <form action="loginAlumno.html" method="post">
+                                <div>
+                                    <input type="text" name="u" placeholder="Nombre de Usuario" required="required" class="userDiv"/>
                                 </div>
-                            </p>
-                        </form>
-                    </div>
+                                <div>
+                                    <input type="password" name="p" placeholder="Contraseña" required="required" class="contraseniaDiv"/>
+                                </div>
+                                <div>
+                                    <button type="submit" class="btnAcceso">Acceder</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div> 
                 </div>
-    
-                <div id="pnl_2">
-                    <div class="contenidoPestania">
-                        <form action="loginProfe.html" method="">
-                            <p>
-                                <section>        
-                                    <label for="email" class="colocar_email">Introduzca su usuario:</label>
-                                    <input type="email" id="email" placeholder="Nombre de Usuario">
-                                </section>
-                                
-                                <div>                      
-                                    <button>Entrar</button>
+
+                <div id="tab3" class="tab">
+                    <a href="#tab3"><strong>Acceso Administrador</strong></a>
+                    <div class="tab-content">
+                        <div class="login text-center">
+                            <div class="iconDiv"><img src="Resources/icono.PNG" width="125" height="80"></div>
+                            <form action="loginAlumno.html" method="post">
+                                <div>
+                                    <input type="text" name="u" placeholder="Nombre de Usuario" required="required" class="userDiv"/>
                                 </div>
-                            </p>
-                        </form>
-                    </div>
-                </div>
-    
-                <div id="pnl_3">
-                    <div class="contenidoPestania">
-                        <form action="index.html" method="">
-                            <p>
-                                <section>        
-                                    <label for="email">Introduzca su nombre de usuario:</label>
-                                    <input name="email" placeholder="Nombre de Usuario" autocomplete="username" required>
-                                </section>
-                                <section>        
-                                    <label for="current-password">Contraseña</label>
-                                    <input id="current-password" placeholder="Contraseña de acceso" type="password" required>
-                                </section>
-                                <div>                      
-                                    <button>Entrar</button>
+                                <div>
+                                    <input type="password" name="p" placeholder="Contraseña" required="required" class="contraseniaDiv"/>
                                 </div>
-                            </p>
-                        </form>
-                    </div>
+                                <div>
+                                    <button type="submit" class="btnAcceso">Acceder</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div> 
                 </div>
             </div>
-        </section>
-        <script>
-            function enviar(pagina){
-                document.doc_recibidos.action = pagina;
-                document.doc_recibidos.submit();
-            }
-            </script>
+        </div>
     </body>
 
 </html>

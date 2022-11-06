@@ -22,16 +22,62 @@
         </header>
 
         <main class="container">
-            <div class="enunciadoBtnAdd d-flex justify-content-between">
-                <div><h2 class="enunciado">Listado de cursos disponibles:</h2></div>
-                <div class="searchAdd">
-                    <div class="botonAdd">
-                        <img src="../Resources/aniadir.png" height="50" width="50" title="Añadir curso" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1&Añadir nuevo curso">
-                    </div>
-                    <div class="busquedaLupa">
-                        <input type="search" placeholder='Buscar...' id='search'>
-                        <div id='button-holder'>
-                            <img src='../Resources/lupe.png'/>
+            <div class="enunciadoBtnAdd">
+                <div class="encabezado">
+                    <div><h2 class="enunciado">Listado de cursos disponibles:</h2></div>
+                    <div class="seccionAddSearch">
+                        <div class="botonAdd">
+                            <img src="../Resources/aniadir.png" height="50" width="50" title="Añadir curso" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1&Añadir nuevo curso">
+                        </div>
+                        <!-- <div class="combobox1">
+                            <div>Filtro de Búsqueda:</div>
+                            <select class="cuadroSelect1">
+                                <option value="" disabled selected hidden>Seleccione filtro...</option>
+                                <option disabled>Por Área:</option>
+                                <option>Ofimática</option>
+                                <option>Tecnologías Informáticas</option>
+                                <option>Internet</option>
+                                <option disabled>Por Nivel:</option>
+                                <option>Iniciación</option>
+                                <option>Generalista</option>
+                                <option>Especialización</option>
+                            </select>
+                        </div> -->
+                        <form class="seccionFiltro">
+                            <div class="multiselect">
+                                <div class="selectBox" onclick="showCheckboxes()">
+                                    <select>
+                                        <option disabled selected hidden>Seleccione filtro...&nbsp;&nbsp</option>
+                                    </select>
+                                    <div class="overSelect"></div>
+                                </div>
+                                <div id="checkboxes">
+                                    <div>Por Área:</div>
+                                    <label for="one">
+                                    <input type="checkbox" id="uno"/>Ofimática</label>
+                                    <label for="two">
+                                    <input type="checkbox" id="dos"/>Tecnologías Informáticas</label>
+                                    <label for="three">
+                                    <input type="checkbox" id="tres"/>Internet</label>
+                                    <div>Por Nivel:</div>
+                                    <label for="four">
+                                    <input type="checkbox" id="cuarto"/>Iniciación</label>
+                                    <label for="five">
+                                    <input type="checkbox" id="quinto"/>Generalista</label>
+                                    <label for="six">
+                                    <input type="checkbox" id="sexto"/>Especialización</label>
+                                    <div class="btnAplicarDiv">
+                                        <input type="submit" value="Aplicar" class="btnAplicar"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="busquedaLupa">
+                            <input type="search" placeholder='Buscar...' id='search'>
+                            <div id='button-holder'>
+                                <img src='../Resources/lupe.png'/>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,97 +1,133 @@
 body{
-    margin: 0;
     background-image: url(../Resources/FondoPizarra.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
-  
-#main {
-    margin-top: 10%;
-    margin-left: 25%;
-    margin-right: 25%;
-}
 
-#main > h1{
-    font-size: xx-large;
-}
-
-h1, h2 {
-    text-align: center;
-    color: beige;
-}
-  
-#tabs{
-    position: relative;
-}
-
-span.diana {
-    position: fixed;
+/* funcionamiento básico del sistema de pestañas */
+.tab-content {
     display: none;
 }
   
-.diana + a {
+.tab:target .tab-content, .tab:last-of-type .tab-content {
     display: block;
-    float: left;
-    height: 2em;
-    line-height: 2em;
-    padding: 0 10px;
-    border: 3px solid LimeGreen;
-    background-color: seagreen;
-    color: white;
-    margin-bottom: 0px;
-    border-radius: 10px 10px 0 0;
-    margin-right: 0px;
-    text-decoration:none;
+    /* background-color: darkcyan; */
 }
   
-.diana:target + a {
-    background-color: gainsboro;
-    color: black;
-    border-bottom-color: transparent; 
-}
-  
-#pnl_1, #pnl_2, #pnl_3{
-    position: absolute;
-    top: 31px;
-    left: 0;
-    border: none;
-    clear: both;
-    overflow: hidden;
-}
-#pnl_1 > div, #pnl_2 > div, #pnl_3 > div{
-    opacity: 0;
-    transition: all 0.1s ease;
-    padding: 30px;
+.tab:target ~ .tab:last-of-type .tab-content {
+    display: none;
 }
 
-.contenidoPestania {
+/* parámetros para configurar las pestañas */
+:root {
+    --tabs-border-color: LimeGreen;
+    --tabs-border-size: 3px;
+    --tabs-text-color: white;
+    --tabs-dark-color: Darkgreen;
+    --tabs-lite-color: DarkSlateGray;
+    --tabs-width: 25%;
+    --tabs-height: 50px;
+}
+  
+/* aspecto básico */
+a {
+    text-decoration: none;
+}
+
+.tabs * {
+    box-sizing: border-box;
+}
+
+/* esto es para posicionar las pestañas correctamente */
+.tab-container {
+    position: relative;
+    padding-top: var(--tabs-height); /* en esta zona colocaremos las pestañas */
+} 
+
+#tab1>a { --tabs-position: 0; }
+#tab2>a { --tabs-position: 1; }
+#tab3>a { --tabs-position: 2; }
+#tab4>a { --tabs-position: 3; }
+#tab5>a { --tabs-position: 4; }
+#tab6>a { --tabs-position: 5; }
+#tab7>a { --tabs-position: 6; }
+#tab8>a { --tabs-position: 7; }
+#tab9>a { --tabs-position: 8; }
+
+.tab>a {
     text-align: center;
-    background-color: Gainsboro;
-    justify-content: center;
+    position: absolute;
+    padding: 1%;
+    color: white;
+    width: calc(var(--tabs-width));
+    height: calc(var(--tabs-height) + var(--tabs-border-size)); 
+    top: 0;
+    left: calc(var(--tabs-width) * var(--tabs-position)); /* posición de cada pestaña */
 }
 
-button {
-    background-color: LimeGreen;
-    margin-top: 2%;
-    border-radius: 10px;
-    font-size: 17px;
-    padding-left: 2%;
-    padding-right: 2%;
+/* más aspecto */
+.tabs { 
+    color: var(--tabs-text-color);
+    width: 65%;
 }
 
-button:hover{
-    cursor:pointer;
-    background-color: #249424;
-}
-  
-#uno:target ~ #pnl_1, #dos:target ~ #pnl_2, #tres:target ~ #pnl_3{
-    position: static;
-    border: 3px solid LimeGreen;
+.tab-content {
+    background-color: var(--tabs-lite-color); 
+    border: var(--tabs-border-size) solid var(--tabs-border-color);
     border-radius: 0 10px 10px 10px;
-    cursor: pointer;
+    position: relative;
+    z-index: 100;
 }
-  
-#uno:target ~ #pnl_1 > div, #dos:target ~ #pnl_2 > div, #tres:target ~ #pnl_3 > div{
-    opacity: 1;
-    transition: all 1s ease;
+
+.tab>a {
+    background-color: var(--tabs-dark-color); 
+    border: var(--tabs-border-size) solid var(--tabs-border-color);
+    border-radius: 10px 10px 0 0;
+    border-bottom: 0;
+}
+
+.tab:target>a, .tab:last-of-type>a {
+    background-color: var(--tabs-lite-color); 
+    z-index: 200;
+}
+
+.tab:target ~ .tab:last-of-type>a {
+    background-color: var(--tabs-dark-color); 
+    z-index: 0;
+}
+
+.login {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.iconDiv {
+    margin-bottom: 2%;
+}
+
+.userDiv {
+    border-radius: 5px;
+    margin-bottom: 0.5%;
+    background-color: LemonChiffon;
+}
+
+.contraseniaDiv {
+    border-radius: 5px;
+    margin-bottom: 2%;
+    background-color: LemonChiffon;
+}
+
+.btnAcceso {
+    background-color: ForestGreen;
+    color: white;
+    border-color: black;
+    border-radius: 10px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    font-size: 18px;
+}
+
+.btnAcceso:hover {
+    background-color: #124c04;
+    font-size: 18px;
 }
