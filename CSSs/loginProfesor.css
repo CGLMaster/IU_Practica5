@@ -340,12 +340,13 @@ main{
 }
 
 .inicio > h3{
-    margin-left:160px;
+    margin-left: 23%;
+    margin-right: 23%;
     font-size: 13px;
     color:#717070
 }
 .modal-lg {
-    max-width: 40% !important;
+    max-width: 45vw !important;
 }
 
 
