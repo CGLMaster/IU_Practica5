@@ -1,16 +1,65 @@
-.participantes {
-    width: 50px;
-    height: 50px;
+.botonesList {
+    text-align: right;
+    vertical-align: center;
+    margin: auto;
+    font-size: 18px;
+    width: 75%;
+    margin-right: 5%;
+    justify-content: space-between;
 }
 
-.botonesEd {
-    text-align: center;
+/* .addEditionForm {
     vertical-align: top;
-    margin: auto;
-    width: 30%;
+    width: 50%;
+    justify-content: center;
+} */
+
+.botonesEd {
+    /* text-align: center; */
+    vertical-align: center;
+    /* font-size: 18px; */
+    display: inline-block;
+    justify-content: center;
+    margin-right: 5%;
+    color: white;
+    background-color: #196d04;
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    width: 25%;
+    align-items: center;
+}
+
+.botonesEd:hover {
+    background-color: #124c04;
+}
+
+
+
+/* Para boton que sube arriba */
+.goup{
+	background:#196d04;
+	bottom:0px;
+	display: flex;
+    align-items: center;
+	height: 50px;
+	position: fixed;
+	right:0px;
+	width:50px;
+}
+
+#editionModal > div > div > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:3%;
+}
+
+#editionModal > div > div > div > div > h2{
     font-size: 18px;
 }
 
-.addEditionForm{
-    vertical-align: top;
+img:not(.logo, .icono):hover{
+    cursor:pointer;
 }
