@@ -515,7 +515,7 @@
                     } 
                 }); 
                 $('.goup').click(function(){ 
-                    $("html, body").animate({ scrollTop: 0 }, 600); 
+                    $("html, body").animate({ scrollTop: 0 }, 20); 
                     return false; 
                 }); 
             });
@@ -672,37 +672,42 @@
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-2" id="exampleModalLabel2">Profesores de la edición</h1>
+                        <h1 class="modal-title fs-2" id="exampleModalLabel2">Alumnos de la edición</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
+                        
                         <div id="inicio">
-                            <h3>Si desea vincular/desvincular profesores, pulse en la casilla</h3>
+                            <p>Si desea vincular/desvincular alumnos, pulse en la casilla</p>
                         </div>
-                        <br>
-                        <div>
-                            <input type="checkbox" id="cbox1" value="first_checkbox"> <label for="cbox1"><h5> MARÍA ELVIRA ALBERT ALBIOL</h5></label>
-                        </div>
-                        <br>
-                        <div>
-                            <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2"><h5> PURIFICACIÓN ARENAS SÁNCHEZ</h5></label>
-                        </div>
-                        <br>
-                        <div>
-                            <input type="checkbox" id="cbox3" value="third_checkbox"> <label for="cbox3"><h5> JAVIER ARROYO GALLARDO</h5></label>
-                        </div>
-                        <br>
-                        <div>
-                            <input type="checkbox" id="cbox4" value="forth_checkbox"> <label for="cbox4"><h5> DANIEL BASCONES ARROYO</h5></label>
-                        </div>
-                        <br>
-                        <div>
-                            <input type="checkbox" id="cbox5" value="fifth_checkbox"> <label for="cbox5"><h5> MIGUEL BENITO PAREJO</h5></label>
+                        <div id="scroll-list">
+                        <!-- <div> -->
+                            <br>
+                            <div>
+                                <input type="checkbox" id="cbox1" value="first_checkbox"> <label for="cbox1"><h5> MARÍA ELVIRA ALBERT ALBIOL</h5></label>
+                            </div>
+                            <br>
+                            <div>
+                                <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2"><h5> PURIFICACIÓN ARENAS SÁNCHEZ</h5></label>
+                            </div>
+                            <br>
+                            <div>
+                                <input type="checkbox" id="cbox3" value="third_checkbox"> <label for="cbox3"><h5> JAVIER ARROYO GALLARDO</h5></label>
+                            </div>
+                            <br>
+                            <div>
+                                <input type="checkbox" id="cbox4" value="forth_checkbox"> <label for="cbox4"><h5> DANIEL BASCONES ARROYO</h5></label>
+                            </div>
+                            <br>
+                            <div>
+                                <input type="checkbox" id="cbox5" value="fifth_checkbox"> <label for="cbox5"><h5> MIGUEL BENITO PAREJO</h5></label>
+                            </div>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
-
+        
         
 
     </body>
