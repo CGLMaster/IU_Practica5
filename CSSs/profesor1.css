@@ -38,8 +38,26 @@ header{
     align-items: center;
     margin-right: 3%;
 }
+.infoCuenta{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    flex-direction: column;
+}
 .user{
     color: #53a43f;
+    margin: 0;
+    margin-bottom: 8px;
+}
+#cerrarSesion{
+    border-radius: 10px;
+    font-size: 19px;
+    color: white;
+    cursor: pointer;
+    text-decoration:none;
+}
+#cerrarSesion:hover{
+    background-color: #860c0c;
 }
 .icono{
     height: 100px;
