@@ -67,7 +67,7 @@ img:not(.logo, .icono):hover{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 19vh;
 }
 
 .curses{
@@ -80,8 +80,8 @@ img:not(.logo, .icono):hover{
 }
 
 .curses > img{
-    height: 300px;
-    width: 300px;
+    height: 29vh;
+    width: 15vw;
 }
 
 .editions{
@@ -93,16 +93,12 @@ img:not(.logo, .icono):hover{
 }
 
 .editions > img{
-    height: 300px;
-    width: 300px;
+    height: 29vh;
+    width: 15vw;
 }
 
 img:not(.logo, .icono):hover{
     cursor:pointer;
-}
-
-main{
-    margin-top: 8vh;
 }
 
 /* STUDENT */
