@@ -29,50 +29,11 @@
                         <div class="botonAdd">
                             <img src="../Resources/aniadir.png" height="50" width="50" title="Añadir curso" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1&Añadir nuevo curso">
                         </div>
-                        <!-- <div class="combobox1">
-                            <div>Filtro de Búsqueda:</div>
-                            <select class="cuadroSelect1">
-                                <option value="" disabled selected hidden>Seleccione filtro...</option>
-                                <option disabled>Por Área:</option>
-                                <option>Ofimática</option>
-                                <option>Tecnologías Informáticas</option>
-                                <option>Internet</option>
-                                <option disabled>Por Nivel:</option>
-                                <option>Iniciación</option>
-                                <option>Generalista</option>
-                                <option>Especialización</option>
-                            </select>
-                        </div> -->
-                        <form class="seccionFiltro">
-                            <div class="multiselect">
-                                <div class="selectBox" onclick="showCheckboxes()">
-                                    <select>
-                                        <option disabled selected hidden>Seleccione filtro...&nbsp;&nbsp</option>
-                                    </select>
-                                    <div class="overSelect"></div>
-                                </div>
-                                <div id="checkboxes">
-                                    <div>Por Área:</div>
-                                    <label for="one">
-                                    <input type="checkbox" id="uno"/>Ofimática</label>
-                                    <label for="two">
-                                    <input type="checkbox" id="dos"/>Tecnologías Informáticas</label>
-                                    <label for="three">
-                                    <input type="checkbox" id="tres"/>Internet</label>
-                                    <div>Por Nivel:</div>
-                                    <label for="four">
-                                    <input type="checkbox" id="cuarto"/>Iniciación</label>
-                                    <label for="five">
-                                    <input type="checkbox" id="quinto"/>Generalista</label>
-                                    <label for="six">
-                                    <input type="checkbox" id="sexto"/>Especialización</label>
-                                    <div class="btnAplicarDiv">
-                                        <input type="submit" value="Aplicar" class="btnAplicar"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-
+                        <section class="pp">
+                            <button data-bs-toggle="modal" data-bs-target="#filtroModal" class="filtro">
+                                <img src="../Resources/filtro.png" height="30" width="30">
+                            </button>
+                        </section>
                         <div class="busquedaLupa">
                             <input type="search" placeholder='Buscar...' id='search'>
                             <div id='button-holder'>
@@ -396,45 +357,86 @@
                         </div>
                         <br>
                         <div>
-                            <h2 id="t1">MARÍA BARCENILLA HINCHADO.<FONT style="color:white; border-radius: 10px;"></FONT></h2>
+                            <h2 id="t1">MARÍA BARCENILLA HINCHADO. <FONT style="color:white; background-color: green; border-radius: 10px;">&nbsp;&nbsp;8.0 Notable&nbsp;&nbsp;</FONT></h2>
                             <button type="button" class="btn-close" id="bt1" data-bs-toggle="modal" data-bs-target="#warningModal1"></button>
                         </div>
                         <div>
-                            <h2 id="t2">ALBERTO CHAVES LÓPEZ.<FONT style="color:white; border-radius: 10px;"></FONT></h2>
+                            <h2 id="t2">ALBERTO CHAVES LÓPEZ. <FONT style="color:white; background-color: orangered; border-radius: 10px;">&nbsp;&nbsp;No presentado&nbsp;&nbsp;</FONT></h2>
                             <button type="button" class="btn-close" id="bt2" data-bs-toggle="modal" data-bs-target="#warningModal2"></button>
                         </div>
                         <div>
-                            <h2 id="t3">BRYAN EDUARDO CÓRDOVA ASCURRA.<FONT style="color:white; border-radius: 10px;"></FONT></h2>
+                            <h2 id="t3">BRYAN EDUARDO CÓRDOVA ASCURRA. <FONT style="color:white; background-color: green; border-radius: 10px;">&nbsp;&nbsp;6.0 Aprobado&nbsp;&nbsp;</FONT></h2>
                             <button type="button" class="btn-close" id="bt3" data-bs-toggle="modal" data-bs-target="#warningModal3"></button>
                         </div>
                         <div>
-                            <h2 id="t4">MARTA CROCHE TRIGO.<FONT style="color:white; border-radius: 10px;"></FONT></h2>
+                            <h2 id="t4">MARTA CROCHE TRIGO. <FONT style="color:white; background-color: green; border-radius: 10px;">&nbsp;&nbsp;9.0 Sobresaliente&nbsp;&nbsp;</FONT></h2>
                             <button type="button" class="btn-close" id="bt4" data-bs-toggle="modal" data-bs-target="#warningModal4"></button>
                         </div>
                         <div>
-                            <h2 id="t5">FÉLIX RODOLFO DÍAZ LORENTE.<FONT style="color:white; border-radius: 10px;"></FONT></h2>
+                            <h2 id="t5">FÉLIX RODOLFO DÍAZ LORENTE. <FONT style="color:white; background-color: green; border-radius: 10px;">&nbsp;&nbsp;7.5 Notable&nbsp;&nbsp;</FONT></h2>
                             <button type="button" class="btn-close" id="bt5" data-bs-toggle="modal" data-bs-target="#warningModal5"></button>
                         </div>
                         <div>
-                            <h2 id="t6">MANUEL ESPINOSA GUERRA.<FONT style="color:white; border-radius: 10px;"></FONT></h2>
+                            <h2 id="t6">MANUEL ESPINOSA GUERRA. <FONT style="color:white; background-color: red; border-radius: 10px;">&nbsp;&nbsp;4.5 Suspenso&nbsp;&nbsp;</FONT></h2>
                             <button type="button" class="btn-close" id="bt5" data-bs-toggle="modal" data-bs-target="#warningModal5"></button>
                         </div>
                         <div>
-                            <h2 id="t7">JUAN IGNACIO FERNÁNDEZ JOVER.<FONT style="color:white; border-radius: 10px;"></FONT></h2>
+                            <h2 id="t7">JUAN IGNACIO FERNÁNDEZ JOVER. <FONT style="color:white; background-color: orangered; border-radius: 10px;">&nbsp;&nbsp;No presentado&nbsp;&nbsp;</FONT></h2>
                             <button type="button" class="btn-close" id="bt5" data-bs-toggle="modal" data-bs-target="#warningModal5"></button>
                         </div>
                         <div>
-                            <h2 id="t8">JULIA FLUITERS PEREIRA.<FONT style="color:white; border-radius: 10px;"></FONT></h2>
+                            <h2 id="t8">JULIA FLUITERS PEREIRA. <FONT style="color:white; background-color: red; border-radius: 10px;">&nbsp;&nbsp;4.9 Suspenso&nbsp;&nbsp;</FONT></h2>
                             <button type="button" class="btn-close" id="bt5" data-bs-toggle="modal" data-bs-target="#warningModal5"></button>
                         </div>
                         <div>
-                            <h2 id="t9">MANUEL FREIRE MORAN.<FONT style="color:white; background-color: red; border-radius: 10px;"></FONT></h2>
+                            <h2 id="t9">MANUEL FREIRE MORAN. <FONT style="color:white; background-color: green; border-radius: 10px;">&nbsp;&nbsp;5.5 Aprobado&nbsp;&nbsp;</FONT></h2>
                             <button type="button" class="btn-close" id="bt5" data-bs-toggle="modal" data-bs-target="#warningModal5"></button>
                         </div>
                         <div>
-                            <h2 id="t10">JOSÉ MARÍA DE LA FUENTE BAHÓN.<FONT style="color:white; background-color: red; border-radius: 10px;"></FONT></h2>
+                            <h2 id="t10">JOSÉ MARÍA DE LA FUENTE BAHÓN. <FONT style="color:white; background-color: red; border-radius: 10px;">&nbsp;&nbsp;4.1 Suspenso&nbsp;&nbsp;</FONT></h2>
                             <button type="button" class="btn-close" id="bt5" data-bs-toggle="modal" data-bs-target="#warningModal5"></button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="filtroModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-2" id="exampleModalLabel2">Seleccione un filtro de búsqueda:</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div><strong>Por Área:</strong></div>
+                        <div class="p-2">
+                            <div>
+                                <input type="checkbox" id="cboxS1" value="first_S_checkbox"> <label for="cboxS1"><h5>Ofimática</h5></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="cboxS2" value="second_S_checkbox"> <label for="cboxS2"><h5>Tecnologías Informáticas</h5></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="cboxS3" value="third_S_checkbox"> <label for="cboxS3"><h5>Internet</h5></label>
+                            </div>
+                        </div>
+
+                        <div><strong>Por Nivel:</strong></div>
+                        <div class="p-2">
+                            <div>
+                                <input type="checkbox" id="cboxS4" value="forth_S_checkbox"> <label for="cboxS4"><h5>Iniciación</h5></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="cboxS5" value="fifth_S_checkbox"> <label for="cboxS5"><h5>Generalista</h5></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="cboxS6" value="fifth_S_checkbox"> <label for="cboxS5"><h5>Especialización</h5></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="guardar">Aplicar</button>
                     </div>
                 </div>
             </div>
