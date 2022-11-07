@@ -178,9 +178,6 @@ section {
     margin-left: 2%;
 }
 
-
-
-
 /* Para paginar */
 .paginacion {
 	margin:20px 0;
@@ -263,15 +260,21 @@ img:not(.logo, .icono):hover{
 
 /* Para el encabezado con filtro */
 
+.enunciadoBtnAdd {
+    margin-top: 5%;
+}
+
 .encabezado {
     color: white;
     width: 100%;
+    margin-bottom: 0.5%;
     display: flex;
     justify-content: space-between;
 }
 
-.botonAdd {
-    /* margin-right: 5%; */
+.enunciado {
+    margin-left: 2%;
+    width: 100%;
 }
 
 .seccionFiltro {
@@ -314,10 +317,6 @@ img:not(.logo, .icono):hover{
 }
 
 .btnAplicarDiv {
-    /* background-color: #196d04;
-    border-radius: 10px;
-    color: white;
-    border: 0; */
     margin-top: 5%;
     text-align: center;
 }
@@ -361,10 +360,9 @@ img:not(.logo, .icono):hover{
 
 .seccionAddSearch {
     display: flex;
-    /* background-color: blue; */
+    margin-right: 2%;
 }
 
 .busquedaLupa {
     display: flex;
-    /* background-color: grey; */
 }
