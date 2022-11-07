@@ -333,13 +333,30 @@ img:not(.logo, .icono):hover{
     background-color: #124c04;
 }
 /********/
+.pp {
+    background-color:#196d04;
+    border: 3px solid #7dff5d;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtro {
+    background-color: transparent;
+    border:0;
+}
+
+.pp:hover{
+    background-color:#124c04;
+}
 
 .combobox1 {
     background-color: violet;
 }
 
 .cuadroSelect1 {
-    /* background-color: peru; */
+    background-image: url("../Resources/filtro.pngs");
 }
 
 .seccionAddSearch {
