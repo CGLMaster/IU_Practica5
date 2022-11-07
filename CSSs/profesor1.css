@@ -1,0 +1,12 @@
+.buttonEdiciones {
+    align-items: center;
+    justify-content:center;
+    color: white;
+    background-color:#196d04;
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    width: 50px;
+    padding-left: 60px;
+    padding-right: 50px;
+}
