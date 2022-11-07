@@ -34,7 +34,40 @@
     background-color: #124c04;
 }
 
+.seccionAddSearch {
+    display: flex;
+    margin-bottom:1%;
+    /* background-color: blue; */
+}
 
+/* #scroll-list{
+    width: 1%
+    /* overflow: scroll; *
+    /* background-color: lightgreen; *
+}
+
+#scroll-list::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+
+#scroll-list::-webkit-scrollbar-thumb {
+    background: #434343;
+    border-radius: 16px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25),inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+#scroll-list::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#434343,#434343 1px,#111 0,#111);
+} */
+
+#scroll-list > div{
+    margin-left: 5%;
+}
+
+#cboxS1 {
+    margin-top: 1%;
+}
 
 /* Para boton que sube arriba */
 .goup{
@@ -48,18 +81,31 @@
 	width:50px;
 }
 
-#editionModal > div > div > div > div {
+#editionStudentsModal > div > div > div > div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     margin-top:3%;
 }
 
-#editionModal > div > div > div > div > h2{
+#editionStudentsModal > div > div > div > div > h2{
     font-size: 18px;
 }
 
 img:not(.logo, .icono):hover{
     cursor:pointer;
+}
+
+#inicio{
+    display: flex;
+    margin-bottom: 0.5%;
+    align-items: center;
+    justify-content: center ;
+    width: 100%;
+}
+
+#inicio > h3{
+    font-size: 13px;
+    color:#717070;
 }
