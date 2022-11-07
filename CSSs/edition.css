@@ -40,6 +40,18 @@
     /* background-color: blue; */
 }
 
+.cursoInfo > section > h2{
+    vertical-align:middle;
+    margin-left: 1%;
+    margin-top: 0.5%;
+    position:absolute;
+} 
+
+
+
+
+
+
 /* #scroll-list{
     width: 1%
     /* overflow: scroll; *
